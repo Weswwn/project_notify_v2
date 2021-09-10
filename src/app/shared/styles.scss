@@ -1,0 +1,39 @@
+.fadeInLeft {
+    -webkit-animation: fadeinleft 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeinleft  1s; /* Firefox < 16 */
+    -ms-animation: fadeinleft  1s; /* Internet Explorer */
+    -o-animation: fadeinleft  1s; /* Opera < 12.1 */
+    animation: fadeinleft  1s;
+}
+
+.fadeInUp {
+    -webkit-animation: fadeInUp 2.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeInUp 2.5s; /* Firefox < 16 */
+    -ms-animation: fadeInUp 2.5s; /* Internet Explorer */
+    -o-animation: fadeInUp 2.5s; /* Opera < 12.1 */
+    animation: fadeInUp 2.5s;
+}
+
+.fadeIn {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+.animationFadeInUp {
+    @keyframes fadeInUp {
+        from {opacity: 0;transform: translate3d(0,40px,0)}
+        
+        to {transform: translate3d(0,0,0);opacity: 1}
+    }
+}
+
+.animationFadeIn {
+    @keyframes fadein {
+        from {opacity: 0;transform: translate3d(0,40px,0)}
+        
+        to {transform: translate3d(0,0,0);opacity: 1}
+    }
+}

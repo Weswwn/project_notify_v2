@@ -1,0 +1,33 @@
+#form-description-container {
+    margin:4rem;
+    
+    .description-content {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom:60px;
+        .description-text {
+            color: white;
+            line-height: 1.6;
+            font-size: 20px;
+            font-weight: lighter;
+            
+        }
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    #form-description-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            font-size: 1.5rem;
+        }
+        .description-content .description-text {
+            text-align: center;
+        }
+    }
+}
+

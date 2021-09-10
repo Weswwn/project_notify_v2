@@ -23,11 +23,11 @@ module.exports = {
       'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
     },
   },
-  // entry: './src/index.js',
+  entry: './src/index.tsx',
   output: {
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'static'),
     publicPath: '/',
-    filename: 'bundle.js',
   },
   module: {
     rules: [
@@ -40,6 +40,11 @@ module.exports = {
             presets: ["@babel/preset-env", "@babel/preset-react"]
           }
         }
+      },
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/
       },
       {
         test: /\.scss$/,
@@ -64,7 +69,11 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['*', '.tsx', '.jsx', '.js']
+    extensions: ['*', '.tsx', '.jsx', '.js'],
+    alias: {
+      '@atoms': path.resolve(__dirname, 'src/app/atoms/'),
+      '@pages': path.resolve(__dirname, 'src/app/pages/'),
+    }
   },
   plugins: [
     new CssExtractPlugin({

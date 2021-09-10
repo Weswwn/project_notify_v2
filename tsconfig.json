@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "outDir": "./static/",
+        "noImplicitAny": false,
+        "module": "es6",
+        "target": "es5",
+        "jsx": "react",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": "./src",
+        "paths": {
+            "@atoms/*": [
+                "app/atoms/*"
+            ],
+            "@pages/*": [
+                "app/pages/*"
+            ]
+        }
+    }
+}

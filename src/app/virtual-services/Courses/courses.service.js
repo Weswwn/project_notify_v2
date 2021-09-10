@@ -24,9 +24,16 @@ class CourseService {
             return { status: 'failed', msg: 'Something went wrong. Please send us an email to contact our engineers.' };
         }
     }
-    async getActiveUserCourseCount() {
+    async getCourse() {
+        const response = await fetch(baseURL, {
+            method: 'GET',
+        })
+        return await response.json();
+    }
+
+    async getTrackingStats() {
         try {
-            let response = await fetch(`${baseURL}usercourse/`, {
+            const response = await fetch(`${baseURL}usercourse/`, {
                 method: 'GET',
             })
             return await response.json();
