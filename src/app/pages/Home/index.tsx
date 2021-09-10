@@ -28,6 +28,9 @@ export function Home() {
             <div className='tw-bg-opacity-10 tw-bg-red-400 tw-w-full tw-h-full tw-absolute tw-pointer-events-none'></div>
             <div className='tw-flex tw-flex-col tw-justify-between'>
                 <div className='tw-flex tw-flex-col tw-justify-center tw-items-center'>
+                    <div className='tw-p-8 tw-bg-gray-500 tw-rounded'>
+                    <h1 className='tw-text-red-500 tw-text-2xl'>AT THE MOMENT, THIS SERVICE IS DISABLED FOR MAINTENANCE. PLEASE CHECK MY TWITTER FOR UPDATES.</h1>
+                    </div>
                     <label className='tw-flex tw-text-center tw-mb-4 tw-text-5xl tw-font-bold tw-text-white'>UBC COURSE TRACKER. </label>
                     <label className='tw-flex tw-mb-4 tw-text-2xl tw-font-thin tw-text-white tw-flex-wrap tw-justify-center'>Track the course you need. <label className='tw-font-extrabold'>Completely Free.</label></label>
                     <Button type='primary' className='animationFadeIn fadeIn' label={'TRACK NOW'} onClick={handleClick} />
